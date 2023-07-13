@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>JS_Project</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="header">
+
+            <h1 class="headingText">Math Partner</h1>
+
+            <button class="cart" onclick="getHistory()" target="_blanck">
+                <h1 class="cart">HISTORY</h1>
+                <i class="fa-solid fa-clock-rotate-left" onclick="clearHistory()"></i>
+            </button>
+                
+       
+       
+            <div class="hist" >
+             <p id="pp"></p>
+            </div>
+
+            <button style="background-color: #9d1e1e;" class="cart"  onclick="clearHistory()">Clear History</button>
+
+        </div>
+
+    <div class="main_content">
+
+            <!-- <form action="" autocomplete="on" id="mathform" class="custom-select"> -->
+               <span class="spn">Problem</span> 
+               
+               <input type="text" autocomplete="on" id="inputBox">
+              
+               <span class="spn">SELECT CATEGORY</span> 
+                              
+
+                    <select name="slct" id='categoryBar'>
+                        <option value="simplify">Simplify</option>
+                        <option value="factor">Factor</option>
+                        <option value="derive">Derive</option>
+                        <option value="integrate">Integrate</option>
+                        <option value="zeroes">Find 0's</option>
+                        <option value="tangent">Find Tangent</option>
+                        <option value="area">Area Under Curve</option>
+                        <option value="cos">Cosine</option>
+                        <option value="sin">Sine</option>
+                        <option value="tangent">Tangent</option>
+                        <option value="Inverse Cosine">Inverse Cosine</option>
+                        <option value="Inverse Sin">Inverse Sine</option>
+                        <option value="arctan">Inverse Tangent</option>
+                        <option value="abs">Absolute Value</option>
+                        <option value="log">Logarithm</option>
+        
+                 </select>
+
+                <button id="searchButton" name="submit" onclick="">SEARCH</button>
+
+                <button id="searchIcon" onclick="fetchData()"><i class="fa-solid fa-magnifying-glass"></i></button>
+               
+            <!-- </form> -->
+
+            <div id="res">
+              <!-- Empty -->
+              
+            </div>
+            <button class="trashIcon"
+            onclick="deleteButton()"><i class="fa-sharp fa-solid fa-trash" ></i></button>
+        
+        </div>
+
+
+    </div>
+  
+       
+        
+</body>
+
+</html>
